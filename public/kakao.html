@@ -1,0 +1,15 @@
+<script src = "//developers.kakao.com/sdk/js/kakao.min.js"></script>  //스크립트 타입을 kakao타입으로 함
+<a id="kakao-login-btn"></a> //버튼의 id를 정함
+<a href="http://developers.kakao.com/logout"></a>  //로그아웃 링크를 설정
+<script type='text/javascript'>
+ 
+Kakao.init('479a2b07aece2073b2d8a5114f751e43'); //아까 카카오개발자홈페이지에서 발급받은 자바스크립트 키를 입력함
+ 
+//카카오 로그인 버튼을 생성합니다. 
+ 
+Kakao.Auth.authorize({
+  redirectUri: '{http://junseok816.cafe24.com/kakao.html}'
+});
+
+
+</script>
