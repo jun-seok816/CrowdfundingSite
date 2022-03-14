@@ -13,6 +13,7 @@
 
 
 <br/>
+
 <p align="center">
   <img src="https://user-images.githubusercontent.com/72478198/158101761-23fdee5a-6aae-4c5d-90c0-8166ac87c9d0.gif" alt="animated" />
 </p>
@@ -60,13 +61,13 @@
 
 ## ERD
 
-
-
-    <p align="center">
-      <img src="https://user-images.githubusercontent.com/72478198/158125711-782741ac-979a-4b83-a68f-73f3aac0ef7c.png" alt="animated" />
-    </p>
-
 만들어진 ERD는 아래 URL에서 확인하실 수 있습니다.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/72478198/158125711-782741ac-979a-4b83-a68f-73f3aac0ef7c.png" alt="animated" />
+</p>
+
+
 
 URL : https://aquerytool.com/aquerymain/index/?rurl=461e7ba1-d288-4744-8c06-2d3877c4ad25&  
 Password : 28mbb5
