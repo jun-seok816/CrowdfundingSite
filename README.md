@@ -81,7 +81,7 @@ URL : https://shingu.gitbook.io/jun-api/query/user-page
 
 <div align="center">
   <h1>PHP 모듈소개</h1>
-  ajax를 이용하여 php호출
+  ajax를 이용하여 php호출하였습니다
 </div> 
 
 
