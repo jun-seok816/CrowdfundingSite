@@ -128,6 +128,79 @@ dataType json
 
 <br/>
 
+## ajaxChangeEmail
+
+
+### Description
+
+계정 이메일변경
+
+### Request
+
+#### URL
+  
+```javascript
+POST ajax_src/ajaxChangeEmail.php HTTP/1.1
+dataType json
+```
+ <br/>
+ 
+#### Parameter
+
+|Name|Type|Description|Required|
+|---|---|---------|---|
+|email|String|사용자의 쇼셜 이메일|true|
+|authNum|String|인증번호|true|
+|memberDiv|String|이메일 활성화 비활성화 여부|true|
+
+  
+ <br/>
+  
+### Response
+
+|Name|Type|Description|Required|
+|---|---|---------|---|
+|memberDivNum|Number|사용자의 이메일 활성화 여부|true|
+
+<br/>
+
+## ajaxChangeEmail
+
+
+### Description
+
+계정 비밀번호변경
+
+### Request
+
+#### URL
+  
+```javascript
+POST ajax_src/ajaxChangePW.php HTTP/1.1
+dataType json
+```
+ <br/>
+ 
+#### Parameter
+
+|Name|Type|Description|Required|
+|---|---|---------|---|
+|currentPW|String|사용자의 현재 비밀번호|true|
+|newPW|String|새로운 비밀번호|true|
+|checkNewPW|String|비밀번호 체크|true|
+|agreeMarketing|String|마케팅정보 받을지 체크|true|
+
+  
+ <br/>
+  
+### Response
+
+|Name|Type|Description|Required|
+|---|---|---------|---|
+|currChecked|Number|비밀번호가 일치하는지에 대한 |true|
+
+<br/>
+
 
 ## ajaxJoin
 
