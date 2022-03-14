@@ -3,7 +3,7 @@
 * [소개글](#Single-Page-Application)
 * [Architecture](#Architecture)
 * [Back End Application구조](#Back-End-Application구조)
-* [Ajax 모듈들 소개](#Ajax-모듈들-소개)
+* [PHP 모듈들 소개](#PHP-모듈들-소개)
 * [DataBase](#DataBase)
 
 <div align="center">
@@ -59,7 +59,7 @@
 
 
 
-## Login API
+## PHP 모듈들 소개
 
 ### Description
 
