@@ -59,7 +59,12 @@
   <h1>DataBase</h1>
 </div> 
 
-## ERD
+<div align="center">
+  <h1>ERD</h1>
+</div> 
+
+<br/>
+<br/>
 
 만들어진 ERD는 아래 URL에서 확인하실 수 있습니다.
 
@@ -67,17 +72,29 @@
   <img src="https://user-images.githubusercontent.com/72478198/158125711-782741ac-979a-4b83-a68f-73f3aac0ef7c.png" alt="animated" />
 </p>
 
-
+<br/>
+<br/>
 
 **URL : https://aquerytool.com/aquerymain/index/?rurl=461e7ba1-d288-4744-8c06-2d3877c4ad25&**  
 Password : 28mbb5
 
-## Query문 사용한 각종API정리
+
+
+<div align="center">
+  <h1>Query문 사용한 각종API정리</h1>
+</div> 
+
+<br/>
+<br/>
+<br/>
 
 프로젝트에서 사용한 각종 query문과 외부 API를 문서로 정리하였습니다.
 
 **URL : https://shingu.gitbook.io/jun-api/query/user-page**
 
+
+<br/>
+<br/>
 
 <div align="center">
   <h1>PHP 모듈소개</h1>
