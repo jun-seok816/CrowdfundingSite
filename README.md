@@ -37,7 +37,7 @@
 <div align="center">
     <h1>Architecture</h1>
     <p align="center">
-      <img src="https://user-images.githubusercontent.com/72478198/158101445-6be695fd-3830-4974-8dab-6b5f21afc58d.png" alt="animated" />
+      <img src="https://user-images.githubusercontent.com/72478198/158101449-fde0b81d-9dd2-4e84-bc75-234916c516df.png" alt="animated" />
     </p>
  </div> 
 <br/>
@@ -47,7 +47,7 @@
 <div align="center">
     <h1>Front 구조</h1>
     <p align="center">
-      <img src="https://user-images.githubusercontent.com/72478198/157164745-43be341c-1130-4118-9151-07954b3779e8.png" alt="animated" />
+      <img src="https://user-images.githubusercontent.com/72478198/158101445-6be695fd-3830-4974-8dab-6b5f21afc58d.png" alt="animated" />
     </p>
  </div> 
 <br/>
