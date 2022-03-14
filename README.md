@@ -61,8 +61,22 @@
 ## ERD
 
 
+
+    <p align="center">
+      <img src="https://user-images.githubusercontent.com/72478198/158125711-782741ac-979a-4b83-a68f-73f3aac0ef7c.png" alt="animated" />
+    </p>
+
+만들어진 ERD는 아래 URL에서 확인하실 수 있습니다.
+
 URL : https://aquerytool.com/aquerymain/index/?rurl=461e7ba1-d288-4744-8c06-2d3877c4ad25&  
 Password : 28mbb5
+
+## Query문 사용한 각종API정리
+
+프로젝트 제작중 다른팀원들의 이해를 돕기위해 GitBook에 Query문과 사용한API에 대해 정리하였습니다.  
+
+URL : https://shingu.gitbook.io/jun-api/query/user-page
+
 
 <div align="center">
   <h1>PHP 모듈소개</h1>
