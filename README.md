@@ -70,7 +70,7 @@
   
 ```javascript
 POST ajax_src/ajaxLogin.php HTTP/1.1
-dataType: json
+dataType json
 ```
 
 #### Parameter
