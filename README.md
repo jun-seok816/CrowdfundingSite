@@ -69,7 +69,7 @@
 
 
 
-**URL : https://aquerytool.com/aquerymain/index/?rurl=461e7ba1-d288-4744-8c06-2d3877c4ad25&**
+**URL : https://aquerytool.com/aquerymain/index/?rurl=461e7ba1-d288-4744-8c06-2d3877c4ad25&**  
 Password : 28mbb5
 
 ## Query문 사용한 각종API정리
