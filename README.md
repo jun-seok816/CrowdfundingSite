@@ -2,7 +2,7 @@
 
 * [소개글](#Single-Page-Application)
 * [Architecture](#Architecture)
-* [Front 구조](#Front-구조)
+* [Back End Application구조](#Back-End-Application구조)
 * [Ajax 모듈들 소개](#Ajax-모듈들-소개)
 * [DataBase](#DataBase)
 
@@ -14,7 +14,7 @@
 
 <br/>
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/72478198/156970307-0734d2a3-5f22-4254-9ab9-0b52c9de429d.gif" alt="animated" />
+  <img src="https://user-images.githubusercontent.com/72478198/158101761-23fdee5a-6aae-4c5d-90c0-8166ac87c9d0.gif" alt="animated" />
 </p>
 
 
@@ -45,7 +45,7 @@
 
 <br/>
 <div align="center">
-    <h1>Front 구조</h1>
+    <h1>Back End Application구조</h1>
     <p align="center">
       <img src="https://user-images.githubusercontent.com/72478198/158101445-6be695fd-3830-4974-8dab-6b5f21afc58d.png" alt="animated" />
     </p>
