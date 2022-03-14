@@ -37,7 +37,7 @@
 <div align="center">
     <h1>Architecture</h1>
     <p align="center">
-      <img src="https://user-images.githubusercontent.com/72478198/157164247-4535b61a-f10c-48c3-a7a2-df47deec8ea9.png" alt="animated" />
+      <img src="https://user-images.githubusercontent.com/72478198/158101445-6be695fd-3830-4974-8dab-6b5f21afc58d.png" alt="animated" />
     </p>
  </div> 
 <br/>
