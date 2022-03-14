@@ -74,7 +74,7 @@ Password : 28mbb5
 
 ## Query문 사용한 각종API정리
 
-프로젝트 제작중 다른팀원들의 이해를 돕기위해 GitBook에 Query문과 사용한API에 대해 정리하였습니다.  
+프로젝트에서 사용한 각종 query문과 외부 API를 문서로 정리하였습니다.
 
 URL : https://shingu.gitbook.io/jun-api/query/user-page
 
