@@ -69,14 +69,14 @@
 
 
 
-URL : https://aquerytool.com/aquerymain/index/?rurl=461e7ba1-d288-4744-8c06-2d3877c4ad25&  
+**URL : https://aquerytool.com/aquerymain/index/?rurl=461e7ba1-d288-4744-8c06-2d3877c4ad25&**
 Password : 28mbb5
 
 ## Query문 사용한 각종API정리
 
 프로젝트에서 사용한 각종 query문과 외부 API를 문서로 정리하였습니다.
 
-URL : https://shingu.gitbook.io/jun-api/query/user-page
+**URL : https://shingu.gitbook.io/jun-api/query/user-page**
 
 
 <div align="center">
