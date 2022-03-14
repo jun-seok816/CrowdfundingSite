@@ -3,13 +3,12 @@
 * [소개글](#Single-Page-Application)
 * [Architecture](#Architecture)
 * [Front 구조](#Front-구조)
-* [REST API Reference](#REST-API-Reference)
+* [Ajax 모듈들 소개](#Ajax-모듈들-소개)
 * [DataBase](#DataBase)
-* [WebPack](#WebPack)
 
 <div align="center">
-  <h1>Single Page Application 게시판👀</h1>
-<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fjun-seok816%2Fa-bulletin-board&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
+  <h1>CrowdFunding Site with PHP👀</h1>
+<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fjun-seok816%2FCrowdfundingSite&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
 </div>  
 
 
@@ -21,16 +20,14 @@
 
 <br/>
 <p align="center">
-  <b>본 문서는 REST API 와 React를 사용하여 만든 게시판에대해 안내합니다</b>
+  <b>본 문서는 php를 사용하여 만든사이트에 대해 안내합니다</b>
 </p>
 
-<h3 align="center">만들어진 사이트는 http://jun.cafe24app.com/ 에서 확인하실 수 있습니다. </h3>   
+<h3 align="center">만들어진 사이트는 http://funware.shop/index.php 에서 확인하실 수 있습니다. </h3>   
 <br/>
 <div align="center">
- 
-  <img src="https://img.shields.io/badge/React-3D41C8?style=flat-square&logo=React&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Webpack-1dc207?style=flat-square&logo=Webpack&logoColor=white"/>
-   <img src="https://img.shields.io/badge/Mysql-3D41C8?style=flat-square&logo=Mysql&logoColor=white"/>
+    <img src="https://img.shields.io/badge/PHP-3D41C8?style=flat-square&logo=PHP&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Mysql-3D41C8?style=flat-square&logo=Mysql&logoColor=white"/>
 </div>
 
 <br/>
