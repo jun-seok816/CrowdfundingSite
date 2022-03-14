@@ -3,8 +3,8 @@
 * [소개글](#Single-Page-Application)
 * [Architecture](#Architecture)
 * [Back End Application구조](#Back-End-Application구조)
-* [PHP 모듈소개](#PHP-모듈소개)
 * [DataBase](#DataBase)
+* [PHP 모듈소개](#PHP-모듈소개)
 
 <div align="center">
   <h1>CrowdFunding Site with PHP👀</h1>
@@ -51,6 +51,18 @@
     </p>
  </div> 
 <br/>
+
+
+
+<div align="center">
+  <h1>DataBase</h1>
+</div> 
+
+## ERD
+
+
+URL : https://aquerytool.com/aquerymain/index/?rurl=461e7ba1-d288-4744-8c06-2d3877c4ad25&  
+Password : 28mbb5
 
 <div align="center">
   <h1>PHP 모듈소개</h1>
@@ -364,285 +376,7 @@ dataType: json
 
 
 
-# WebPack
 
-WebPack설정을 어떻게 하였는지 설명합니다.
-
-## entry
-
-엔트리 포인트는 React의 가장 상위 컴포넌트인 index.tsx로 설정하였습니다.
-
-```javascript
- entry: {
-            "index" : './src/index.tsx',
-        },
-```
-
-## output
-
-번들을 내보낼 위치를 BackEnd폴더로 설정하였습니다.
-
-```javascript
- output: {
-            path: mv_Path.resolve(__dirname, '../back/views'),
-            filename: 'index.js',
-            clean : true,
-            //chunkFormat: 'commonjs'
-        },
-```
-
-## resolve
-
-확장자를 설정한대로 순서대로 해석합니다.
-
-```javascript
- resolve: {
-        extensions: ['.tsx','.ts','.jsx','.js','.json', '.css', '.scss', 'html'],
-  },
-```
-
-## module.rules
-
-모듈 규칙설정
-
-### Rule.exclude
-
-node_modules 파일은 번들링하지 않도록 제외하였습니다.
-
-
-```javascript
-
-module:{
-  rules:[
-    .../
-    {exclude: /node_modules/,}
-  ]
-}
-```
-
-### babel-loader
-
-Javascript 와 JavaScript XML에 해당하는 파일은 babel-loader를 사용하여 컴파일하도록 설정하였습니다.  
-@babel/preset-env으로  ES2015+ syntax버전에 맞게 컴파일되도록 하였고,  
-@babel/preset-react으로 jsx파일을 컴파일되도록 하였습니다.
-
-```javascript  
-
-module:{
-  rules:[
-      {
-          test: /\.jsx?$/,   // .js or .jsx 
-          exclude: /node_modules/,
-          use : [
-            {
-              loader: 'babel-loader',
-              options: {
-                presets: ['@babel/preset-env', '@babel/preset-react'],
-              }
-            },
-          ],
-        },
-  ]
-}
-```
-
-
-### ts-loader
-
-typescript와 typescript XML에 해당하는 파일은 ts-loader를 사용하여 컴파일하도록 설정하였습니다.
-
-
-```javascript
-module:{
-  rules:[
-     {
-      test: /\.tsx?$/,   
-      exclude: /node_modules/,
-      use : [
-        {
-          loader : 'ts-loader'
-        }
-      ],
-    },
-  ]
-}
-```
-
-### style-loader , css-loader , sass-loader
-
-확장자명이 .scss .css에 해당하는 파일을 컴파일하도록 설정하였습니다  
-sass-loader로 scss파일을 컴파일 후   
-css-loader로 css파일을 컴파일 후  
-style-loader로 최종 컴파일하도록 설정하였습니다.
-
-```javascript  
-module:{
-  rules:[
-        {
-          test: /\.(sc|c)ss$/,  // .scss .css
-          use: [
-            //'cache-loader',
-            //MiniCssExtractPlugin.loader,
-            'style-loader',
-            'css-loader',
-            'sass-loader'
-          ]
-        },
-  ]
-}
-```
-
-### file-loader
-
-해당하는 확장자명을 가진 파일을 컴파일합니다.
-만약 파일이름이 동일할 시 앞에 hash코드를 덧붙여 파일이름을 다르게 설정하도록하였습니다.
-
-```javascript
-module:{
-  rules:[
-    {
-      test: /\.(png|jpg|gif|svg|html)$/,
-      loader: 'file-loader',
-      options: {
-        name: '[name].[ext]?[hash]'
-      }
-    }
-  ]
-}
-```
-
-### devtool
-
-개발자도구로 디버깅하기 용이하게 소스맵을 볼 수 있도록 설정하였습니다.
-
-```javascript
- devtool: 'inline-source-map',
-```
-
-### optimization 
-
-코드들을 알아볼 수 있게 minimize 설정을 false로 하였습니다.
-
-```javascript
-optimization: {
-    minimize: false,
- },
-```
-
-### HtmlWebpackPlugin
-
-webpack 번들을 제공하는 HTML 파일을 설정한되로 생성하도록 하였습니다.
-
-```javascript
- plugins: [
-    new HtmlWebpackPlugin({
-      filename: 'index.html',
-      minify:false,
-      templateContent: `
-      <html>
-        <head>
-          <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
-        </head>
-        <body>
-          <div id="app"></div>
-        </body>
-      </html>
-    `
-    })
-  ],
-```
-
-### devServer
-
-개발자 서버를 사용하여 애플리케이션을 더 빠르게 제작하였습니다.
-
-### historyApiFallback
-
-index.html페이지는 404응답 대신 제공되도록 하였습니다.  
-경로가 '/' 일때 index.html이 응답되도록 하였습니다.
-
-```javascript
-devServer:{
-  historyApiFallback: {
-            rewrites : [
-              { from: /^\/$/, to: 'index.html' }
-            ]
-          },
-}         
-```
-
-### static
-
-옵션을 사용하여 디렉터리에서 정적 파일을 제공하였습니다.
-
-```javascript
-const mv_Path = require('path')
-
-//...
-devServer:{
-  static : [
-            {
-              directory: mv_Path.resolve(__dirname, './demo'),
-              publicPath: '/',
-              watch: true,
-            },
-            {
-              directory: mv_Path.resolve(__dirname, './src'),
-              publicPath: '/jsLib',
-              watch: true,
-            },
-          ],
-}         
-
-```
-
-### client
-
-* progress : 브라우저에서 컴파일 진행률을 백분율로 인쇄합니다.
-* overlay : 컴파일중에 오류나 경고가 있는 경우 브라우저에 오류를 뿌리도록 설정합니다.  
-
-```javascript
- client : {
-            progress : true,
-            overlay: true,
-          },
-```
-
-### NODE_ENV가 production일때 처리
-
-개발자용 build가 아닌 배포용 build를할때 처리방식입니다.  
-webpack객체의 devtool을 source-map으로 설정하여 개발자모드에서 소스내용을 볼 수 없게합니다.  
-webpack객체의 plugins에 설정값을 추가합니다.  
-
-* DefinePlugin은 컴파일 시간에 코드의 변수를 다른 값이나 표현식으로 바꿉니다.
-* LoaderOptionsPlugin은 전역로더에 minimize옵션을 추가하여 번들을 최소화합니다.
-
-```javascript
-const mv_Result ={
-//...
-  devtool: 'inline-source-map',
-  /...
-  plugins: [
-  /...
-  ],
-
-  if (process.env.NODE_ENV === 'production') {
-    //module.exports.devtool = 'inline-source-map'
-    mv_Result.devtool = 'source-map'
-    // http://vue-loader.vuejs.org/en/workflow/production.html
-    mv_Result.plugins = (module.exports.plugins || []).concat([
-      new webpack.DefinePlugin({
-        'process.env': {
-          NODE_ENV: '"production"'
-        }
-      }),
-      new webpack.LoaderOptionsPlugin({
-        minimize: true
-      })
-    ])
-  }
-}
-```
 
 
 [__junGallery__]: http://jun.cafe24app.com/
