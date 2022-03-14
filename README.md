@@ -68,6 +68,13 @@
 
 만들어진 ERD는 아래 URL에서 확인하실 수 있습니다.
 
+**URL : https://aquerytool.com/aquerymain/index/?rurl=461e7ba1-d288-4744-8c06-2d3877c4ad25&**  
+Password : 28mbb5
+
+
+<br/>
+<br/>
+
 <p align="center">
   <img src="https://user-images.githubusercontent.com/72478198/158125711-782741ac-979a-4b83-a68f-73f3aac0ef7c.png" alt="animated" />
 </p>
@@ -75,8 +82,7 @@
 <br/>
 <br/>
 
-**URL : https://aquerytool.com/aquerymain/index/?rurl=461e7ba1-d288-4744-8c06-2d3877c4ad25&**  
-Password : 28mbb5
+
 
 
 
